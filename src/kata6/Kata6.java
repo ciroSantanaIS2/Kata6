@@ -24,7 +24,8 @@ public class Kata6 {
         }
     }
 
-    private static void print(ResultSet set) {
-        
+    private static void print(ResultSet set) throws SQLException {
+        System.out.print(set.getString("DIVISA") + " ");
+        System.out.println(set.getBigDecimal("CAMBIO"));
     }
 }
